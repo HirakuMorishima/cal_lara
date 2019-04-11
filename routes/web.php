@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/holiday','CalendarController@getHoliday');
+Route::post('/holiday','CalendarController@postHoliday');
